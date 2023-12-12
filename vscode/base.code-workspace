@@ -1,0 +1,68 @@
+{
+	"folders": [{
+		"path": "."
+	}],
+	"settings": {
+		"[blade]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true,
+			"editor.defaultFormatter": "shufo.vscode-blade-formatter"
+		},
+		"[php]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true
+		},
+		"[typescript,neon]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true
+		},
+		"[markdown]": {
+			"editor.formatOnSave": true,
+			"editor.wordWrap": "on",
+			"editor.renderWhitespace": "all",
+			"editor.acceptSuggestionOnEnter": "off"
+		},
+		"[html]": {
+			"editor.formatOnSave": false,
+			"editor.wordWrap": "off",
+		},
+		"[vue]": {
+			// "editor.formatOnSave": true,
+			// "editor.formatOnPaste": true,
+			"editor.wordWrap": "off",
+			"editor.wrappingIndent": "none"
+		},
+		"editor.defaultFormatter": "HookyQR.beautify",
+		"namespaceResolver.sortAlphabetically": true,
+		"namespaceResolver.sortOnSave": true,
+		"eslint.format.enable": true,
+		"blade.format.enable": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"files.trimTrailingWhitespace": true,
+		"editor.insertSpaces": false,
+		"editor.tabCompletion": "on",
+		"editor.detectIndentation": false,
+		"emmet.triggerExpansionOnTab": true,
+		"editor.wordWrap": "off",
+		"editor.wordWrapColumn": 1000,
+		"html.format.wrapLineLength": 0,
+		"intelephense.files.exclude": [
+			"**/.git/**",
+			"**/.svn/**",
+			"**/.hg/**",
+			"**/CVS/**",
+			"**/.DS_Store/**",
+			"**/node_modules/**",
+			"**/bower_components/**",
+			"**/storage",
+			"**/storage/**",
+			"**/tests/**",
+			"**/resources/views/**",
+			"**/database/migrations/**",
+			"**/storage/framework/views/**",
+			"_ide_helper.php",
+			"_ide_helper_models"
+		]
+	}
+}

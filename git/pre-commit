@@ -1,0 +1,21 @@
+#!/bin/sh
+
+PHP_CS_FIXER_CONFIG=".php-cs-fixer.php"
+PHP_CS_FIXER="./vendor/bin/php-cs-fixer"
+HAS_PHP_CS_FIXER=false
+
+if [ -x vendor/bin/php-cs-fixer ]; then
+    HAS_PHP_CS_FIXER=true
+fi
+
+if $HAS_PHP_CS_FIXER; then
+    $PHP_CS_FIXER fix . --config $PHP_CS_FIXER_CONFIG;
+    git add .;
+else
+    echo ""
+    echo "Please install php-cs-fixer, e.g.:"
+    echo ""
+    echo "  composer require --dev friendsofphp/php-cs-fixer"
+    echo ""
+fi
+
